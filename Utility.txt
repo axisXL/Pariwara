@@ -1,0 +1,9 @@
+{
+  "pariwara_muncul":"htts://detik.com",
+  "pariwara_muncul_gbr":"https://github.com/abc",
+  "pariwara_muncul_flag":1, 
+  "pariwara_tetap":"htts://detik.com",
+  "pariwara_tetap_gbr":"https://github.com/abc", 
+  "pariwara_tetap_flag":1,
+  "pariwara_version":1.2
+}
