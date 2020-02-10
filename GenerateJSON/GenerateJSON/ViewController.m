@@ -19,12 +19,11 @@
     [super viewDidLoad];
     
     NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com",
-                           @"pariwara_muncul_gbr":@"https://github.com/abc",
+                           @"pariwara_muncul_gbr":@"https://github.com/axisXL/Pariwara/blob/master/pariwara.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
-                           @"pariwara_tetap_gbr":@"https://github.com/abc",
-                           @"pariwara_tetap_flag":@(1),
-                            @"pariwara_version":@(1.2)};
+                           @"pariwara_tetap_gbr":@"https://github.com/axisXL/Pariwara/blob/master/pariwara_muncul.png",
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];

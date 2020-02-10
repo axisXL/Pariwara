@@ -1,9 +1,1 @@
-{
-  "pariwara_muncul":"htts://detik.com",
-  "pariwara_muncul_gbr":"https://github.com/abc",
-  "pariwara_muncul_flag":1, 
-  "pariwara_tetap":"htts://detik.com",
-  "pariwara_tetap_gbr":"https://github.com/abc", 
-  "pariwara_tetap_flag":1,
-  "pariwara_version":1.2
-}
+kR5BDfaQWqV9x53K/AOc+73095LKQnLKAZ3NCwLsNHDSDGf/DGP88SwLHRqHSd57wtGMj4d0mxgSVIsR+0Cnhdh+2koSKj/Vwq14d8eaFqocrFVJdhvhzjnJ3jzZAU8N7rhRU48CL+gyJqKSZn68U0TnEynVPTFt34qtVmqhTFwn/gSYaaN55HsWP7HGyIIBEiIhCBc1jm2qKBOa4mM5asLWWWWvZ2Oz0fpQGiPO4FTjuhmjvT5eTo+1tAbFwf8VfwTqIpEiZhHxaNlbJSNmQ0iuaGUKUoLiEiyqePbE1iFllUAAiRWxfbbGY6qyzmPqv9LgoTNQqb9YIyf8M2+zd5LH3XC3lptjFC5z/vb+0Evh/0fmrJvUTiZogm8ycxoO3kIGwAb2vVI0iVRn403V9kGPKPEWynwnkrdoqb4UvW7arpipothCN4ONsJNHT9g4Nnv/FYOykkL6t9neL0HuIyQhmWEnmkhT3LznLI17lJnpxyhdgcgdqZggU9l0BoTI
