@@ -23,7 +23,7 @@
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/pariwara.png",
-                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.1"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
