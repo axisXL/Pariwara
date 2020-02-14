@@ -31,8 +31,8 @@ NSString *const KEY = @"9898765521E5F082BB5929E8E0399987";
 + (NSMutableData *)doAES:(NSData *)dataIn context:(CCOperation)kCCEncrypt_or_kCCDecrypt error:(NSError **)error {
         CCCryptorStatus ccStatus   = kCCSuccess;
         size_t          cryptBytes = 0;
-        NSMutableData  *dataOut    = [NSMutableData dataWithLength:dataIn.length + kCCBlockSizeBlowfish];
-        NSData *key =[KEY dataUsingEncoding:NSUTF8StringEncoding];
+        NSMutableData  *dataOut    = [NSMutableData dataWithLength:dataIn.length + ((dataIn.length/2.0) * kCCBlockSizeBlowfish) + kCCBlockSizeBlowfish];
+        NSData *key = [KEY dataUsingEncoding:NSUTF8StringEncoding];
         NSData *iv = [IV dataUsingEncoding:NSUTF8StringEncoding];
 
         ccStatus = CCCrypt( kCCEncrypt_or_kCCDecrypt,
