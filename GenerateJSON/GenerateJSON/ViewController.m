@@ -18,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self TraceRoute];
+    [self TraceTrack];
+//    [self TraceRoute];
 //    [self UtilityBlock];
 //    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceRoute/Utility.txt"];
 }
@@ -49,6 +50,22 @@
 }
 
 
+- (void)TraceTrack {
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com",
+                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceRoute/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(1),
+                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceRoute/pariwara.png",
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
 
 - (void)UtilityBlock {
     NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com",
