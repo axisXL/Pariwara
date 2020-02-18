@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self TraceTrack];
+//    [self TraceTrack];
 //    [self TraceRoute];
-//    [self UtilityBlock];
+    [self UtilityBlock];
     [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/Utility.txt"];
 }
 
