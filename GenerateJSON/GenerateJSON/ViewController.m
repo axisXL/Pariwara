@@ -21,7 +21,7 @@
 //    [self TraceTrack];
 //    [self TraceRoute];
     [self BetterTrace];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/Utility.txt"];
 }
 
 - (void)generateURL:(NSString *)strURL {
