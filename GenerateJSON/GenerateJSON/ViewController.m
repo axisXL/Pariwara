@@ -106,7 +106,7 @@
 
 - (void)DragAd {
     NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
-                           @"pariwara_muncul_flag":@(1),
+                           @"pariwara_muncul_flag":@(0),
                            @"pariwara_tetap_url":@"https://kompas.com",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.2"};
