@@ -22,8 +22,9 @@
 //    [self TraceRoute];
 //    [self BetterTrace];
 //    [self DragAd];
-    [self YDownloader];
-    
+//    [self YDownloader];
+    [self RWeather];
+    https://github.com/axisXL/Pariwara/blob/master/Real%20Weather/Utility.txt
     [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/YDownloader/Utility.txt"];
 }
 
@@ -121,6 +122,22 @@
 }
 
 - (void)YDownloader {
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/YDownloader/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(1),
+                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/YDownloader/pariwara.png",
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+- (void)RWeather {
     NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/YDownloader/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
