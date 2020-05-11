@@ -25,7 +25,7 @@
 //    [self YDownloader];
     [self PhoneAndSmsBlock];
     
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/RWeather/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/PhoneAndSMSBlock/Utility.txt"];
 }
 
 - (void)generateURL:(NSString *)strURL {
@@ -154,10 +154,10 @@
 }
 
 - (void)PhoneAndSmsBlock {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/RWeather/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/PhoneAndSMSBlock/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
-                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/RWeather/pariwara.png",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/PhoneAndSMSBlock/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
     NSError *error;
