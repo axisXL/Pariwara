@@ -1,1 +1,9 @@
-mWRIyEB8vWJX6+7xQjsVtD3P0mO1+7M/CswfemCRm4QGTEVlgB8JkmT08zU66fte5Ox7rBmcCbUts80gIDRvu43InijthTCi+/8J0oE2ku4=
+[{
+    "config_type_id" : 2,
+    "config" : "192.168.12.12",
+    "config_type_name" : "IP"
+  },{
+    "config_type_id" : 2,
+    "config" : "10.168.12.12",
+    "config_type_name" : "IP"
+  }]

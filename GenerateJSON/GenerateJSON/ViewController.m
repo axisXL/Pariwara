@@ -28,7 +28,7 @@
 //    [self VPM];
     [self config];
     
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/VPM/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/UtilityConfig.txt"];
 }
 
 
