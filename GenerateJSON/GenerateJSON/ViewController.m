@@ -25,7 +25,8 @@
 //    [self YDownloader];
 //    [self PhoneAndSmsBlock];
 //    [self Audio];
-    [self VPM];
+//    [self VPM];
+    [self config];
     
     [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/VPM/Utility.txt"];
 }
@@ -213,6 +214,19 @@
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+
+- (void)config {
+    NSArray *arr = @[@{@"config":@"68.183.239.239"}, @{@"config":@"68.1.1.2"}];
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:arr options:NSJSONWritingPrettyPrinted error:&error];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     
     NSString *encrypted = [Helper encrypt:jsonString error:&error];
