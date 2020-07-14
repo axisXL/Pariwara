@@ -25,12 +25,12 @@
 //    [self YDownloader];
 //    [self PhoneAndSmsBlock];
 //    [self Audio];
-//    [self VPM];
+    [self VPM];
 //    [self config];
 //    [self ExpressRun];
 //    [self Sleep];
-    [self PandaSleep];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Sleep/Utility.txt"];
+//    [self PandaSleep];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Panda%20Sleep/Utility.txt"];
 }
 
 
@@ -263,7 +263,7 @@
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/VPM/pariwara.png",
-                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.1"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
