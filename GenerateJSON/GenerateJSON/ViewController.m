@@ -38,7 +38,7 @@
     NSError *error;
     NSString *encrypted = [Helper encrypt:strURL error:&error];
     NSLog(@"encrypted: %@", encrypted);
-    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+    NSLog(@"decrypted: %@", [Helper decrypt:@"bDKIbZ9Y1vvwrYRbI6larqgsny600yf/1Mva5J8IIC3XaYHCXvfaSllV0BhP38dk/AKEJcCQICBaPc25Hz38pn+XBoH4G58ZNzdANwCmbwc=" error:&error]);
 }
 
 
