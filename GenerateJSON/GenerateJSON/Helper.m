@@ -9,8 +9,8 @@
 #import "Helper.h"
 #import <CommonCrypto/CommonCrypto.h>
 
-//NSString *const IV = @"ALURAY15D0B08A4E4";
-//NSString *const KEY = @"9898765521E5F082BB5929E8E0399987";
+NSString *const IV = @"ALURAY15D0B08A4E4";
+NSString *const KEY = @"9898765521E5F082BB5929E8E0399987";
 
 //Swift
 //NSString *const IV = @"AAIUJV1PT0B948534";
@@ -18,8 +18,8 @@
 
 
 //Config VPN
-NSString *const KEY = @"kuAcBreS93MaMc46Ros99Lor0412MavI";
-NSString *const IV = @"IV41N1D1235aN74Y";
+//NSString *const KEY = @"kuAcBreS93MaMc46Ros99Lor0412MavI";
+//NSString *const IV = @"IV41N1D1235aN74Y";
 
 
 @implementation Helper

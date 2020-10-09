@@ -25,12 +25,13 @@
 //    [self YDownloader];
 //    [self PhoneAndSmsBlock];
 //    [self Audio];
-    [self VPM];
+//    [self VPM];
 //    [self config];
 //    [self ExpressRun];
 //    [self Sleep];
 //    [self PandaSleep];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Panda%20Sleep/Utility.txt"];
+    [self BetterTrip];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Better%20Trip/Utility.txt"];
 }
 
 
@@ -38,7 +39,7 @@
     NSError *error;
     NSString *encrypted = [Helper encrypt:strURL error:&error];
     NSLog(@"encrypted: %@", encrypted);
-    NSLog(@"decrypted: %@", [Helper decrypt:@"bDKIbZ9Y1vvwrYRbI6larqgsny600yf/1Mva5J8IIC3XaYHCXvfaSllV0BhP38dk/AKEJcCQICBaPc25Hz38pn+XBoH4G58ZNzdANwCmbwc=" error:&error]);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
 }
 
 
@@ -194,11 +195,11 @@
     NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
 }
 
-- (void)RWeather {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/RWeather/pariwara_muncul.png",
+- (void)BetterTrip {
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Better%20Trip/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
-                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/RWeather/pariwara.png",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Better%20Trip/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
     NSError *error;
