@@ -4,6 +4,6 @@
     "config_type_name" : "IP"
   },{
     "config_type_id" : 2,
-    "config" : "68.183.239.239",
+    "config" : "8.210.199.156",
     "config_type_name" : "IP"
   }]

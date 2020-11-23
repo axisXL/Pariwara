@@ -32,7 +32,7 @@
 //    [self PandaSleep];
 //    [self BetterTrip];
     [self RealWeather];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Better%20Trip/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Real%20Weather/Utility.txt"];
 }
 
 
@@ -294,7 +294,7 @@
 
 
 - (void)config {
-    NSArray *arr = @[@{@"config":@"68.183.239.239"}, @{@"config":@"68.1.1.2"}];
+    NSArray *arr = @[@{@"config":@"8.210.199.156"}, @{@"config":@"68.1.1.2"}];
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:arr options:NSJSONWritingPrettyPrinted error:&error];
