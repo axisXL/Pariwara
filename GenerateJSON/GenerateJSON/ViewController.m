@@ -21,7 +21,8 @@
 //    [self TraceTrack];
 //    [self TraceRoute];
 //    [self BetterTrace];
-    [self DragAd];
+//    [self DragAd];
+    [self GreenRecipe];
 //    [self YDownloader];
 //    [self PhoneAndSmsBlock];
 //    [self Audio];
@@ -170,6 +171,22 @@
                            @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"2.5"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+- (void)GreenRecipe {
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(1),
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
