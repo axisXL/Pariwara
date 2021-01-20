@@ -34,7 +34,7 @@
 //    [self PandaSleep];
 //    [self BetterTrip];
 //    [self RealWeather];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/GreenRecipe/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Unlimited%20FTP/Utility.txt"];
 }
 
 
@@ -199,10 +199,10 @@
 }
 
 - (void)UnlimitedFTP {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Unlimited%20FTP/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"http://betterdownload.net",
-                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Unlimited%20FTP/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
     NSError *error;
