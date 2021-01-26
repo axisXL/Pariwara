@@ -214,6 +214,22 @@
     NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
 }
 
+- (void)PandaList {
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Unlimited%20FTP/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(1),
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Unlimited%20FTP/pariwara.png",
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
 - (void)YDownloader {
     NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/YDownloader/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
