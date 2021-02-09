@@ -21,7 +21,7 @@
 //    [self TraceTrack];
 //    [self TraceRoute];
 //    [self BetterTrace];
-//    [self DragAd];
+    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
 //    [self PandaList];
@@ -35,7 +35,7 @@
 //    [self PandaSleep];
 //    [self BetterTrip];
 //    [self RealWeather];
-    [self GoNetworkTools];
+//    [self GoNetworkTools];
     [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/GoNetworkTool/Utility.txt"];
 }
 
@@ -169,7 +169,7 @@
 }
 
 - (void)DragAd {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
