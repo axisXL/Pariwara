@@ -170,10 +170,10 @@
 
 - (void)DragAd {
     NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
-                           @"pariwara_muncul_flag":@(0),
+                           @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
-                           @"pariwara_tetap_flag":@(0), @"versi":@"2.5"};
+                           @"pariwara_tetap_flag":@(1), @"versi":@"2.7"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
