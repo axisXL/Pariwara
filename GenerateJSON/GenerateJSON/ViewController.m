@@ -38,7 +38,7 @@
 //    [self GoNetworkTools];
 //    [self PhotoEditor];
     [self SmartAppLock];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/SmartAppLock/Utility.txt"];
 }
 
 
@@ -119,10 +119,10 @@
 }
 
 - (void)BetterTrace {
-    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
+    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net",
                            @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(0),
-                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara.png",
                            @"pariwara_tetap_flag":@(0), @"versi":@"1.4"};
     
@@ -136,12 +136,12 @@
 }
 
 - (void)SmartAppLock {
-    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
-                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net",
+                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/SmartAppLock/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(0),
-                           @"pariwara_tetap_url":@"https://kompas.com",
-                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara.png",
-                           @"pariwara_tetap_flag":@(0), @"versi":@"1.4"};
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/SmartAppLock/pariwara.png",
+                           @"pariwara_tetap_flag":@(0), @"versi":@"1.1"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
@@ -153,10 +153,10 @@
 }
 
 - (void)TraceTrack {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com",
+    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"http://betterdownload.net",
                            @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
-                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
     
@@ -332,9 +332,9 @@
 }
 
 - (void)PhotoEditor {
-    NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(0),
-                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara.png",
                            @"pariwara_tetap_flag":@(0), @"versi":@"1.1"};
     
