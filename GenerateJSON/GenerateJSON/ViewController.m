@@ -20,8 +20,8 @@
     
 //    [self TraceTrack];
 //    [self TraceRoute];
-//    [self BetterTrace];
-    [self DragAd];
+    [self BetterTrace];
+//    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
 //    [self PandaList];
@@ -36,7 +36,7 @@
 //    [self BetterTrip];
 //    [self RealWeather];
 //    [self GoNetworkTools];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/GoNetworkTool/Utility.txt"];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/Utility.txt"];
 }
 
 
@@ -117,12 +117,12 @@
 }
 
 - (void)BetterTrace {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com",
+    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
                            @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara.png",
-                           @"pariwara_tetap_flag":@(1), @"versi":@"1.1"};
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.4"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
