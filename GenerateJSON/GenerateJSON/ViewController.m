@@ -118,10 +118,10 @@
 
 - (void)BetterTrace {
     NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
-                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara_muncul.png",
+                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
-                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/TraceTrack/pariwara.png",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"1.4"};
     
     NSError *error;
