@@ -20,7 +20,7 @@
     
 //    [self TraceTrack];
 //    [self TraceRoute];
-    [self BetterTrace];
+//    [self BetterTrace];
 //    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
@@ -36,7 +36,8 @@
 //    [self BetterTrip];
 //    [self RealWeather];
 //    [self GoNetworkTools];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/Utility.txt"];
+    [self PhotoEditor];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/Utility.txt"];
 }
 
 
@@ -313,11 +314,11 @@
 }
 
 - (void)PhotoEditor {
-    NSDictionary *dictPayload = @{@"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara_muncul.png",
+    NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"https://detik.com", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(1),
                            @"pariwara_tetap_url":@"https://kompas.com",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/pariwara.png",
-                           @"pariwara_tetap_flag":@(1), @"versi":@"1.0"};
+                           @"pariwara_tetap_flag":@(1), @"versi":@"1.2"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
