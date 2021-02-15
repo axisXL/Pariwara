@@ -20,7 +20,7 @@
     
 //    [self TraceTrack];
 //    [self TraceRoute];
-    [self BetterTrace];
+//    [self BetterTrace];
 //    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
@@ -37,6 +37,7 @@
 //    [self RealWeather];
 //    [self GoNetworkTools];
 //    [self PhotoEditor];
+    [self SmartAppLock];
     [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Photo%20Editor/Utility.txt"];
 }
 
@@ -118,6 +119,23 @@
 }
 
 - (void)BetterTrace {
+    NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
+                           @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(0),
+                           @"pariwara_tetap_url":@"https://kompas.com",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara.png",
+                           @"pariwara_tetap_flag":@(0), @"versi":@"1.4"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+- (void)SmartAppLock {
     NSDictionary *dictPayload = @{@"paksaForever":@(1), @"pariwara_muncul_url":@"https://detik.com",
                            @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/BetterTrace/pariwara_muncul.png",
                            @"pariwara_muncul_flag":@(0),
