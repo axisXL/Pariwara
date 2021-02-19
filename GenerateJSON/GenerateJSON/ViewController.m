@@ -20,7 +20,8 @@
     
 //    [self TraceTrack];
 //    [self TraceRoute];
-    [self BetterTrace];
+//    [self BetterTrace];
+    [self ]
 //    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
@@ -193,6 +194,22 @@
                            @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
                            @"pariwara_tetap_flag":@(1), @"versi":@"2.7"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+- (void)Skyline {
+    NSDictionary *dictPayload = @{@"iklanForever":@(1), @"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(0),
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/DragAd/pariwara.png",
+                           @"pariwara_tetap_flag":@(0), @"versi":@"1.0"};
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
