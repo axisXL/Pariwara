@@ -21,7 +21,7 @@
 //    [self TraceTrack];
 //    [self TraceRoute];
 //    [self BetterTrace];
-    [self Skyline];
+//    [self Skyline];
 //    [self DragAd];
 //    [self GreenRecipe];
 //    [self UnlimitedFTP];
@@ -39,7 +39,8 @@
 //    [self GoNetworkTools];
 //    [self PhotoEditor];
 //    [self SmartAppLock];
-    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Skyline/Utility.txt"];
+    [self Global];
+    [self generateURL:@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Global/Utility.txt"];
 }
 
 
@@ -209,6 +210,22 @@
                            @"pariwara_muncul_flag":@(0),
                            @"pariwara_tetap_url":@"http://betterdownload.net",
                            @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Skyline/pariwara.png",
+                           @"pariwara_tetap_flag":@(0), @"versi":@"1.0"};
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictPayload options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *encrypted = [Helper encrypt:jsonString error:&error];
+    NSLog(@"encrypted: %@", encrypted);
+    NSLog(@"decrypted: %@", [Helper decrypt:encrypted error:&error]);
+}
+
+- (void)Global {
+    NSDictionary *dictPayload = @{@"iklanForever":@(0), @"pariwara_muncul_url":@"http://betterdownload.net", @"pariwara_muncul_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Global/pariwara_muncul.png",
+                           @"pariwara_muncul_flag":@(0),
+                           @"pariwara_tetap_url":@"http://betterdownload.net",
+                           @"pariwara_tetap_gbr":@"https://raw.githubusercontent.com/axisXL/Pariwara/master/Global/pariwara.png",
                            @"pariwara_tetap_flag":@(0), @"versi":@"1.0"};
     
     NSError *error;
